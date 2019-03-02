@@ -1,0 +1,59 @@
+@mixin transitionMain{
+	transition: all 0.7s ease-in-out;
+}
+
+@mixin trianglesLeft($content,$left,$top){
+	
+		&::before{
+			@media #{$mq-medium} {
+				content: url($content);
+				position: absolute;
+				left: $left;//0
+				top: $top; //50%   
+				transform: translateY(-50%);
+				display: block;
+				z-index:0;
+		}
+	}
+}
+@mixin triangle-black-footer{
+	&::after{
+			@media #{$mq-medium} {
+				content: url(../assets/Rectangle%20red%20footer.svg);
+				position: absolute;
+				bottom: -3%;
+				right: -4%;
+				display: block;
+				z-index:0;
+		}
+	}
+}
+
+@mixin triangle-red-works{
+	&::after{
+			@media #{$mq-medium} {
+				content: url(../assets/rectangle%20red%20works.svg);
+				position: absolute;
+				right: 0;
+				top: 50%;				
+				display: block;
+				z-index:0;
+				
+		}
+	}
+}
+@mixin triangle-black-reviews{
+	
+		&::after{
+			@media #{$mq-medium} {
+				content: url(../assets/Rectangle%20black%20reviews.svg);
+				position: absolute;
+				right: 0;
+				top: 0; //50%   
+				transform: translateY(-50%);
+				display: block;
+				z-index:-5;
+		}
+	}
+}
+

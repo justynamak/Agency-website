@@ -1,0 +1,35 @@
+.btn{
+	min-width: 170px;
+	color:#fff;
+	text-transform:uppercase;
+	font-size: 0.8em;
+	font-family: $tertiary-font-family;
+	padding: 0.9em 2em;
+	background-color: $color-red;
+	border: 1px solid  $color-red;
+	border-radius: 2em;
+	cursor: pointer;
+	margin-top: 2em;
+	white-space: nowrap;
+	box-shadow: inset 0px 0 0 $color-red;
+	margin-right: 2%;
+	@include transitionMain;
+	
+	&:hover{			
+		color:$color-red;
+		background: $color-red;
+		box-shadow: inset 170px 0 0 #fff;
+	}
+	
+	&--white{
+		border: 1px solid #fff;
+		color:#000;
+		background-color: #fff;
+		
+		&:hover{
+			color: #fff;
+			box-shadow: inset 170px 0 0 $color-red;
+		}
+	}
+	
+}

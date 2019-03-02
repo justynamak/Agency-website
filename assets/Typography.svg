@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="752" height="343" viewBox="0 0 752 343">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        font-size: 12.677px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: LemonMilkbold;
+        text-transform: uppercase;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="4.899"/>
+      <feFlood result="flood" flood-color="#231f20"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Typography" class="cls-1">
+    <text id="Think" class="cls-2" transform="translate(375.854 125.432) scale(12.528 12.521)">Think</text>
+    <text id="outside" class="cls-2" transform="translate(375.854 259.648) scale(12.528 12.521)">outside</text>
+    <text id="of_the_box" data-name="of the box" class="cls-2" transform="translate(376.638 342.472) scale(7.584 7.58)">of the box</text>
+  </g>
+</svg>
